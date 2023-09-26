@@ -9,15 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@silvermine/videojs-chromecast": "^1.4.1",
+    "mime": "^3.0.0",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "video.js": "^7.21.4",
+    "videojs-contrib-ads": "^6.9.0",
+    "videojs-hls-quality-selector": "^1.1.4",
+    "videojs-ima": "^2.1.0",
+    "videojs-mobile-ui": "^0.7.0",
+    "videojs-mux": "^4.15.0",
+    "videojs-persist": "^0.1.2",
+    "videojs-plus": "^1.6.9",
+    "videojs-seek-buttons": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
   }
 }

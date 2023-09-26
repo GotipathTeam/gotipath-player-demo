@@ -1,0 +1,198 @@
+/* IMA */
+.video-js .ima-slider-div,
+.video-js .ima-seek-bar-div {
+    display: none;
+}
+
+.vjs-ad-cue-point {
+    position: absolute;
+    margin-left: 0;
+    width: 4px;
+    height: 5px;
+    background-color: yellow;
+    opacity: 50%;
+    border-radius: 2px;
+}
+
+.vjs-ad-playing .vjs-ad-cue-point {
+    display: none;
+}
+
+.ima-paused::before {
+    font-family: VideoJS;
+    content: "\f101";
+}
+
+.ima-playing::before {
+    font-family: VideoJS;
+    content: "\f103";
+}
+
+.ima-non-muted::before {
+    font-family: VideoJS;
+    content: "\f107";
+}
+
+.ima-muted::before {
+    font-family: VideoJS;
+    content: "\f104";
+}
+
+.ima-non-fullscreen::before {
+    font-family: VideoJS;
+    content: "\f108";
+}
+
+.ima-fullscreen::before {
+    font-family: VideoJS;
+    content: "\f109";
+}
+
+/* .ima-ad-container .ima-controls-div {
+    display: none !important;
+} */
+
+/**
+ * Player Customization
+ */
+.video-js {
+    overflow: hidden !important;
+}
+
+.app-view .video-js {
+    height: 100vh !important;
+    padding: 0 !important;
+}
+
+.video-js .vjs-big-play-button,
+.video-js .vjs-control-bar .vjs-play-control,
+.forward-control,
+.rewind-control,
+.vjs-chromecast-button {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video-js .vjs-big-play-button,
+.video-js .vjs-control-bar .vjs-play-control {
+    background-image: url('/images/icons/big-play-button-icon.svg');
+}
+
+.video-js.vjs-playing .vjs-big-play-button,
+.video-js.vjs-playing .vjs-control-bar .vjs-button.vjs-play-control {
+    background-image: url('/images/icons/big-pause-button-icon.svg');
+}
+
+.forward-control {
+    background-image: url('/images/icons/forward-button-icon-1.svg');
+}
+
+.rewind-control {
+    background-image: url('/images/icons/rewind-button-icon-1.svg');
+}
+
+.vjs-chromecast-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url('/images/icons/chromecast-button-icon.svg') !important;
+}
+
+.vjs-tech-chromecast .vjs-tech-chromecast-title-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 481px) {
+    .video-js .vjs-big-play-button {
+        display: block !important;
+    }
+
+    .video-js.vjs-has-started .vjs-big-play-button {
+        display: none !important;
+    }
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder,
+.video-js .vjs-play-control .vjs-icon-placeholder {
+    visibility: hidden;
+}
+
+.video-js .vjs-title {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.video-js.vjs-fullscreen .vjs-title {
+    display: block;
+}
+
+.video-js .vjs-volume-panel .vjs-volume-tooltip {
+    display: none;
+}
+
+.video-js .vjs-volume-panel .vjs-volume-level:before {
+    top: -0.6em !important;
+}
+
+.video-js .vjs-time-control {
+    font-weight: 600;
+}
+
+.video-js .vjs-time-control.vjs-duration {
+    opacity: 0.6;
+}
+
+/* Place mobile ui touch controll at 9th z-index */
+.video-js .vjs-touch-overlay {
+    z-index: 9;
+}
+
+/* Place other controls at 10th z-index */
+.video-js .vjs-control-bar .top,
+.video-js .vjs-control-bar .bottom,
+.video-js .vjs-play-control {
+    z-index: 10;
+}
+
+.video-js .vjs-context-menu {
+    display: none;
+}
+
+.vjs-menu.vjs-setting-menu {
+    z-index: 11 !important;
+}
+
+.video-js .vjs-menu-content {
+    min-width: 150px;
+}
+
+@media (max-width: 480px) {
+    .video-js .vjs-menu-content {
+        max-height: 100%;
+        overflow-y: auto !important;
+    }
+}
+
+.vjs-menu .vjs-menu-content .vjs-menu-item {
+    justify-content: space-between;
+    min-width: 80px;
+}
+
+.vjs-menu .vjs-settings-sub-menu-item>div {
+    margin-right: 0;
+}
+
+.vjs-menu .vjs-menu-content .vjs-menu-item .vjs-menu-item-text {
+    flex: 1 1 0%;
+    margin-right: 10px;
+}
+
+.vjs-setting-menu .vjs-menu-item.vjs-selected {
+    font-weight: bold;
+    background-color: theme('colors.blue.100');
+    color: black;
+}
